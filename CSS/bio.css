@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');  /* Añade la fuente Anton desde Google Fonts */
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                                                  Header de la página                                          */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+header { 
+  display: flex; 
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
+}
+
+/* Estilo para el menú de navegación */
+.linkMenu {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-family: "Anton", sans-serif; /* Fuente específica requerida por el taller*/
+  font-size: 22px; /* Tamaño específico */
+}   
+
+a:hover {  /* Para que si pasa por encima cambie de color */
+  color: rgb(138, 3, 3);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid rgb(0, 0, 0); 
+  margin: 0;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                                                  biografia                                                    */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.biografia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.biografia table tr td{
+  font-family: "Anton", sans-serif; /* Fuente específica requerida por el taller*/
+  font-size: 32px; 
+  border: 2px solid black;
+  border-collapse: collapse; /* Hace que las líneas no se dupliquen */
+  padding: 10px;
+}
+
+ .biografia table tr th {
+  font-family: "Anton", sans-serif; /* Fuente específica requerida por el taller*/
+  font-size: 32px; 
+  border: 2px solid rgb(0, 0, 0);
+  border-collapse: collapse; 
+  padding: 15px;
+  color: white;
+  background-color: rgb(1, 4, 51); /* Color  azul oscuro de fondo de la cabecera  como pide el taller*/
+}
+
+table{
+
+    border-spacing: 0px; /* Elimina el espacio entre celdas */
+    border: rgb(0, 0, 0) 12px solid;
+}
+
+/* requisito para cambiar el color de las filas impares */
+tr:nth-child(odd) {
+  background-color: #f2fff0;
+}
+
+.titleBio {
+  font-family: "Anton", sans-serif; /* Fuente específica requerida por el taller*/
+  font-size: 50px; 
+  color: rgb(0, 0, 0); /* Color azul oscuro de fondo de la cabecera como pide el taller*/
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-decoration-color: #00c3ff; /* Subraya el texto con el color azul oscuro */
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                                               Footer                                                          */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;;
+  width: 100%;
+  margin-top: auto; /* Empuja el footer al fondo */
+  position: relative;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                                               general                                                          */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* para quitar margenes generadas por defecto */
+html,
+body {
+  border: rgb(0, 0, 0) 0px solid;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+
