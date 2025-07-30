@@ -10,6 +10,9 @@ header {
   justify-content: space-between;
   padding: 20px 10px;
   align-items: center;
+  position: sticky; /* Hace que el header se quede fijo al hacer scroll */
+  top: 0; /* Fija el header en la parte superior */
+  background-color: white; /* Fondo blanco para el header */
 }
 
 /* Estilo para el menú de navegación */

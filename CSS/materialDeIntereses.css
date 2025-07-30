@@ -9,8 +9,12 @@
 header { 
   display: flex; 
   justify-content: space-between;
-  padding: 20px 10px;
+  padding: 15px 5%;
   align-items: center;
+  position: sticky; /* Mantenemos sticky */
+  top: 0; /* Fija el header en la parte superior */
+  background-color: white;
+
 }
 
 /* Estilo para el menú de navegación */
@@ -48,7 +52,6 @@ hr {
 h2{
   font-family: "Anton", sans-serif; /* Fuente específica requerida por el taller*/
   font-size: 50px; 
-  color: rgb(0, 0, 0); /* Color azul oscuro de fondo de la cabecera como pide el taller*/
   text-align: center;
   margin-bottom: 10px;
   text-decoration: underline;
@@ -96,12 +99,12 @@ footer {
 html,
 body {
   border: rgb(0, 0, 0) 0px solid;
-  height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Usar min-height en lugar de height, esto resuelve el error que desaparece (vh es viewport, el 100 siginifca 100 porciento) */
 }
 
 
